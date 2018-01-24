@@ -1,35 +1,26 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "igcs_apr_prod",
+    'name': "Módulo para agregar publicar producto y agrega trazabilidad",
 
     'summary': """
-        Short (1 phrase/line) summary of the module's purpose, used as
-        subtitle on modules listing or apps.openerp.com""",
+        Módulo para agregar publicar producto y agrega trazabilidad""",
 
     'description': """
-        Long description of module's purpose
+        Módulo para agregar publicar producto y agrega trazabilidad
     """,
 
-    'author': "My Company",
-    'website': "http://www.yourcompany.com",
+    'author': "InterGlobalCS",
+    'website': "http://www.interglobalcs.com",
 
-    # Categories can be used to filter modules in modules listing
-    # Check https://github.com/odoo/odoo/blob/master/odoo/addons/base/module/module_data.xml
-    # for the full list
-    'category': 'Uncategorized',
+    'category': 'sales',
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base'],
+    'depends': ['base','product'],
 
     # always loaded
     'data': [
         # 'security/ir.model.access.csv',
         'views/views.xml',
-        'views/templates.xml',
-    ],
-    # only loaded in demonstration mode
-    'demo': [
-        'demo/demo.xml',
-    ],
+    ]
 }
